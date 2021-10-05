@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Accueil">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Accueil"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_add_accueil"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#9C27B0"
+            android:text="Add Contacts"
+            />
+
+        <Button
+            android:id="@+id/btn_show_accueil"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="#9C27B0"
+            android:text="Show Contacts" />
+    </LinearLayout>
+</LinearLayout>

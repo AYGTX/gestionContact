@@ -2,6 +2,7 @@ package com.example.gestioncontact;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,11 +32,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v == btn_quit){
             this.finish();
         }
+
         if(v == btn_val){
             String nom = ed_nom.getText().toString();
             String pass = ed_pass.getText().toString();
+            /*if (nom.equals("issatso") && pass.equals("000")) {
+                Intent activityAccueil = new Intent(this,Accueil.class);
+                startActivity(activityAccueil);
+            }
             Toast.makeText(this, "Name: "+nom+" Pass: "+pass, Toast.LENGTH_SHORT).show();
-
+*/
+            Intent activityAccueil = new Intent(this,Accueil.class);
+            startActivity(activityAccueil);
         }
         //if not equals to issatso and 000 then toast error
         //move to another activity
